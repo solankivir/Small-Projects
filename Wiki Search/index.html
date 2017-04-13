@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Wiki Search</title>
+  <link rel="stylesheet" type="text/css" href="wiki search.css">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+  <script src="Wiki search.js"></script>
+</head>
+<body>
+  
+  <div class="container">
+    
+        <img src="logo.png"/>
+        <h1>Wiki Search</h1>
+    
+    <a href="#search">
+      <button class="btn btn-warning">Enter the Wiki</button>
+    </a>
+    <a href=" https://en.wikipedia.org/wiki/Special:Random" target='_blank'>
+      <button class="btn btn-danger pull-right">Get a Random Article</button>
+    </a>
+    <br></br>
+    <div id="search">
+      <form>
+        <input id="keyword" type="search" value="" placeholder="Let's find it" />
+        <button type="submit" class="btn btn-info">Search</button>
+      </form>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading"><h3 class="panel-title" id="heading">Search Results</h3>
+      </div>
+    </div>
+    <div class="list-group" id="results">
+    
+    </div>  
+</body>
+</html>
